@@ -1,0 +1,5 @@
+
+
+attrib +s +h D:\GITHUB\TopSecret  [HIDE]
+
+attrib -s -h D:\GITHUB\TopSecret  [UNHIDE]
