@@ -1,0 +1,13 @@
+
+
+1. Download Youtube Playlist  (Skip Already Downloaded & Only Change Playlist URL)
+
+yt-dlp -o "~/Downloads/%(playlist_index)s - %(title)s.%(ext)s" -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best" --download-archive "~/Downloads/archive.txt" "https://www.youtube.com/playlist?list=PL2HeOArLswsUmXRtQe9tk_utN2UX46Nm1"
+
+2. Download Single Video (Only Change Video URL) 
+
+yt-dlp -o "~/Downloads/%(title)s.%(ext)s" -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best" "https://www.youtube.com/watch?v=UfRZMhcabwA"
+
+3. Download Single From Timing A to Timing B
+
+yt-dlp -o "~/Downloads/%(title)s.%(ext)s" -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best" --download-sections "*5:50:09.1-5:50:21.1" "https://www.youtube.com/live/vBy1P1BMcQc?si=Yl6GwfrEUW-ibyEv"
